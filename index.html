@@ -161,36 +161,5 @@
             <h1 id="goToAbout">ABOUT ME</h1>
             <p>I am a student of computer science with a very keen interest in the tech industry. You can describe me as a tech-junky, passionate in programming and problem solving. Competitive programming seems exhilarating to me. I put my heart and soul to the work that I find interesting. Besides that I travels a lot. Unraveling the unknowns of the world is truly mesmerizing. Rather than that I like to spend my free times by reading books, playing video game or watching movies and series.</p>
         </div>
-        <div>
-            <b>This document was last modified on:</b>
-            <script type="text/javascript">
-                function lastmodified(){
-                    document.write(document.lastModified+"\n");
-                }
-                lastmodified();
-            </script>
-        </div>
-        <div>
-            <b>Location:</b>
-            <script type="text/javascript">
-                function getLocation(){
-                    // Check whether browser supports Geolocation API or not
-                    if (navigator.geolocation) { // Supported
-                    
-                        // To add PositionOptions
-                        
-                        document.write(navigator.geolocation.getCurrentPosition(getPosition));
-                    } else { // Not supported
-                        alert("Oops! This browser does not support HTML Geolocation.");
-                    }
-                }
-                function getPosition(position){
-                    document.getElementById("location").innerHTML = 
-                        "Latitude: " + position.coords.latitude + "<br>" +
-                        "Longitude: " + position.coords.longitude;
-                }
-                getLocation();
-            </script>
-        </div>
     </body>
 </html>
